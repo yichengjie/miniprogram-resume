@@ -127,3 +127,90 @@
   display: block ;
   margin-bottom: 5px; 
 }
+.education,.work,.project,.introduction{
+  border-bottom: dashed 1px #999 ;
+  padding: 10px 0 ;
+}
+.education:last-of-type{
+  border-bottom: none ;
+}
+.education:first-of-type{
+  padding-top: 0;
+}
+.work:last-of-type{
+  border-bottom: none ;
+}
+.work:first-of-type{
+  padding-top: 0;
+}
+.project:last-of-type{
+  border-bottom: none ;
+}
+.project:first-of-type{
+  padding-top: 0;
+}
+.introduction:last-of-type{
+  border-bottom: none ;
+}
+.introduction:first-of-type{
+  padding-top: 0;
+}
+.school,.company,.project-name{
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.icon-school{
+  width: 26px ;
+  height: 26px;
+  vertical-align: -6px ;
+  margin-right: 5px;
+}
+.row{
+   display: flex ;
+   justify-content: space-between ;
+}
+.icon-book{
+  width: 16px;
+  height: 16px;
+  vertical-align: -2px ;
+  margin-right: 3px;
+}
+.icon-calendar{
+  width: 17px;
+  height: 17px;
+  vertical-align: -2px;
+  margin-right: 3px;
+}
+.info{
+  font-size: 16px; 
+  margin-bottom: 10px;
+}
+.desc{
+  color: #999 ;
+  line-height: 1.5 ;
+}
+.page{
+  display: block ;
+  width: 100% ;
+  text-align: center ;
+  font-size: 16px;
+  padding-bottom: 10px;
+}
+.icon-company{
+  width: 22px ;
+  height: 22px; 
+  vertical-align: -4px ;
+  margin-right: 5px;
+}
+.icon-job{
+  width: 18px ;
+  height: 18px; 
+  vertical-align: -3px; 
+  margin-right: 3px;
+}
+.icon-computer{
+  width: 26px;
+  height: 26px ;
+  vertical-align: -6px ;
+  margin-right: 5px;
+}

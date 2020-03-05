@@ -17,6 +17,7 @@
       <image src="../../images/arrow-right.png" class="arrow-right"></image>
     </view>
   </swiper-item>
+
   <swiper-item>
     <scroll-view scroll-y="true" style="width:{{width}}px;height:{{height}}px">
       <view class="resume">
@@ -26,40 +27,125 @@
             <text class="section-title">基本信息</text>
           </view>
           <view class="column col-2">
-             <text class="info">姓名：{{name}}</text>
-             <text class="info">电话：{{tel}}</text>
+            <text class="info">姓名：{{name}}</text>
+            <text class="info">电话：{{tel}}</text>
           </view>
           <view class="column col-2">
-             <text class="info">性别：{{sex}}</text>
-             <text class="info">年龄：{{age}}</text>
+            <text class="info">性别：{{sex}}</text>
+            <text class="info">年龄：{{age}}</text>
           </view>
           <view class="column col-1">
-             <text class="info">邮箱：{{email}}</text>
+            <text class="info">邮箱：{{email}}</text>
           </view>
           <view class="column col-1">
-             <text class="info">住址：{{address}}</text>
+            <text class="info">住址：{{address}}</text>
           </view>
         </view>
         <view class="section">
-           <view class="section-info">
-              <view class="section-seq">2</view>
-              <text class="section-title">主要技能</text>
-            </view>
-            <view class="skill" wx:for="{{skill}}" wx:key="index">
-              <text class="skill-name">{{item.name}}</text>
-              <progress class="progress" percent="{{item.percent}}" stroke-width="5"></progress>
-            </view>
+          <view class="section-info">
+            <view class="section-seq">2</view>
+            <text class="section-title">主要技能</text>
+          </view>
+          <view class="skill" wx:for="{{skill}}" wx:key="index">
+            <text class="skill-name">{{item.name}}</text>
+            <progress class="progress" percent="{{item.percent}}" stroke-width="5"></progress>
+          </view>
         </view>
         <view class="section">
-            <view class="section-info">
-              <view class="section-seq">3</view>
-              <text class="section-title">教育经历</text>
+          <view class="section-info">
+            <view class="section-seq">3</view>
+            <text class="section-title">教育经历</text>
+          </view>
+          <view class="education" wx:for="{{education}}" wx:key="index ">
+            <view class="school">
+              <image src="../../images/icon_school.png" class="icon-school"></image>
+              <text>{{item.school}}</text>
             </view>
-            <view class="education" wx:for="{{education}}" wx:key="index ">
-            
+            <view class="row">
+              <view class="info">
+                <image src="../../images/icon_book.png" class="icon-book"></image>
+                <text>{{item.major}}</text>
+              </view>
+              <view class="info">
+                <image src="../../images/icon_calendar.png" class="icon-book"></image>
+                <text>{{item.year}}</text>
+              </view>
             </view>
+            <rich-text class="desc">{{item.desc}}</rich-text>
+          </view>
         </view>
+        <text class="page">1/4</text>
       </view>
     </scroll-view>
   </swiper-item>
+
+  <swiper-item>
+    <scroll-view scroll-y="true" style="width:{{width}}px;height:{{height}}px">
+      <view class="resume">
+        <view class="section">
+          <view class="section-info">
+            <view class="section-seq">4</view>
+            <text class="section-title">工作经历</text>
+          </view>
+          <view class="work" wx:for="{{work}}" wx:key="index ">
+            <view class="company">
+              <image src="../../images/icon_company.png" class="icon-company"></image>
+              <text>{{item.company}}</text>
+            </view>
+            <view class="row">
+              <view class="info">
+                <image src="../../images/icon_job.png" class="icon-job"></image>
+                <text>{{item.job}}</text>
+              </view>
+              <view class="info">
+                <image src="../../images/icon_calendar.png" class="icon-calendar"></image>
+                <text>{{item.year}}</text>
+              </view>
+            </view>
+            <rich-text class="desc">{{item.desc}}</rich-text>
+          </view>
+        </view> 
+        <text class="page">2/4</text>
+      </view>
+    </scroll-view>
+  </swiper-item>
+
+  <swiper-item>
+    <scroll-view scroll-y="true" style="width:{{width}}px;height:{{height}}px">
+      <view class="resume">
+        <view class="section">
+          <view class="section-info">
+            <view class="section-seq">5</view>
+            <text class="section-title">项目经历</text>
+          </view>
+          <view class="project" wx:for="{{project}}" wx:key="index ">
+            <view class="project-name">
+              <image src="../../images/icon_computer.png" class="icon-computer"></image>
+              <text>{{item.name}}</text>
+            </view>
+            <rich-text class="desc">{{item.desc}}</rich-text>
+          </view>
+        </view>
+        <text class="page">3/4</text>
+      </view>
+    </scroll-view>
+  </swiper-item>
+
+  <swiper-item>
+    <scroll-view scroll-y="true" style="width:{{width}}px;height:{{height}}px">
+      <view class="resume">
+        <view class="section">
+          <view class="section-info">
+            <view class="section-seq">6</view>
+            <text class="section-title">自我评价</text>
+          </view>
+          <view class="introduction">
+            <rich-text class="desc">{{introduction}}</rich-text>
+          </view>
+        </view>
+        <text class="page">4/4</text>
+      </view>
+    </scroll-view>
+  </swiper-item>
+
 </swiper>
